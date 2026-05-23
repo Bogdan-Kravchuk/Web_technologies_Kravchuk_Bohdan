@@ -1,0 +1,70 @@
+<!doctype html>
+<html>
+  <head lang="uk">
+    <meta charset="UTF-8" />
+    <title>Buy List</title>
+
+    <link rel="stylesheet" type="text/css" href="main.css" />
+  </head>
+  <body>
+    <header>
+      <!--Headline-->
+      <h1>Список продуктів</h1>
+    </header>
+    <main>
+      <!--content without headline -->
+      <div class="content-without-headline">
+        <!--search input with product list -->
+        <div class="search-with-product-list">
+          <!--input form -->
+          <form class="search" action="/add">
+            <!--label-->
+            <label for="add_product">Введіть назву товару</label>
+            <!--input-->
+            <input
+              class="input_field"
+              type="text"
+              id="add_product"
+              name="add_product"
+              placeholder="Назва товару"
+              maxlength="20"
+              required
+            />
+            <!--button-->
+            <button
+              type="submit"
+              class="add_product_button tooltip"
+              data-tooltips="Додати"
+            >
+              Додати
+            </button>
+          </form>
+
+          <!-- article product list-->
+          <article class="product-list"></article>
+        </div>
+
+        <!-- Status purchase-->
+        <article class="status-purchase">
+          <article class="remained">
+            <h3 class="remainder-h3">Залишилося</h3>
+            <article class="remainder-list-of-product"></article>
+          </article>
+
+          <article class="purchased">
+            <h3 class="purchased-h3">Куплено</h3>
+
+            <article class="purchased-list"></article>
+          </article>
+        </article>
+      </div>
+    </main>
+    <!-- Badge-->
+    <div class="badge">
+      <h2 class="title-of-badge">Buy List</h2>
+      <p class="created-by">Created by:</p>
+      <h3 class="author">Bohdan Kravchuk</h3>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
